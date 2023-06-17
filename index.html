@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Jasmine.care</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!--  -->
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js">
+        <!--  -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            body{
+                background-color: #fff6fb !important;
+            }
+            .heading{
+                font-size:20px;
+                font-weight:600;
+                color:#3D5AFE;
+
+            }
+
+            .line1{
+                color:#000;
+                font-size:12px;
+
+            }
+            .line2{
+                color:#000;
+                font-size:12px;
+                
+            }
+            .line3{
+                color:#000;
+                font-size:12px;
+                
+            }
+
+            .cards{
+
+                transition: all 0.2s ease;
+                cursor: pointer;
+                
+
+            }
+
+            .cards:hover{
+
+                box-shadow: 5px 6px 6px 2px #e9ecef;
+                transform: scale(1.1);
+            }
+
+            @media (min-width: 600px) {
+                #invisible-lg{
+                display:none;
+            }}
+        </style>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <!-- <img src="assets/img/navbar-logo.svg" alt="..." /> -->
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/Jasmine.CareLogo.png" style="height:60px;" /></a>
+                <a id="invisible-lg" target="_blank" href="https://forms.gle/BxzXytxq95r7NraY9"><button class="btn btn-primary btn-l text-uppercase " id="submitButton" type="submit">Subscribe Here!</button></a></li>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link " href="#plans">Plans</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a target="_blank" href="https://forms.gle/BxzXytxq95r7NraY9"><button class="btn btn-primary btn-l text-uppercase " id="submitButton" type="submit">Subscribe Here!</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <!-- <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Your Personal Hygine Care Partner!</div>
+                <div class="masthead-heading  ">Periods, Cramps, Menstrual Issues..! We Got You!</div>
+                <div class="masthead-heading ">No more worrying about your Period Care.</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            </div>
+        </header> -->
+
+      <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container mt-5 pb-0">
+                <div class="text-center my-5">
+                    <h3 class="section-heading text-uppercase mb-5">Welcome To Your Personal Hygine Care Partner!</h3>
+                    <h5 class="section-heading text-uppercase mt-3 mb-3 ">Want Convienece Delivered Home?</h5>
+                    <h5 class="section-heading text-uppercase mt-3 mb-3 ">Subscription is Solution :)</h5>
+                    <h3 class="section-subheading text-muted ">Choose your period plan and get convinence delivered at doorstep.</h3>
+                </div>
+                <div class="container mt-5 d-flex justify-content-center">
+      
+                    <div class="row g-0">
+                
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+                            <div class="first bg-white p-4 text-center">
+                                <img src="assets/img/standard.png" />
+                                <a href="#plans" style="text-decoration: none;" >
+                                    <h4 class="my-3">Standard Plan</h4>
+                                    <p class="text-muted">Decent 4 month plan | monthly | bi-month delivery.</p>
+                                    <p class="text-muted fst-italic">"Convinience and hassel free delivery."</p>   
+                                </a> 
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-4 border-right">
+                        <div class="cards">
+                            <div class=" second bg-white p-4 text-center">
+                                <a href="#plans" style="text-decoration: none;" >
+                                <img src="assets/img/pro.png" />                                
+                                <h4 class="my-3">Pro Plan</h4>
+                                <p class="text-muted">Smart 8 month plan | monthly | bi-month delivery.</p>
+                                <p class="text-muted fst-italic">"Product delivery with premium packing!"</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="cards">
+                            <div class=" third bg-white p-4 text-center">
+                                <a href="#plans" style="text-decoration: none;" >
+                                <img src="assets/img/premuim.png" />                                
+                                <h4 class="my-3">Premium Plan</h4>
+                                <p class="text-muted">Ultimate 12 month plan | monthly | bi-month delivery.</p>
+                                <p class="text-muted fst-italic">"Automated deliveries as per your selected plan :)"</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                      
+                </div>
+            </div>
+        </section>
+        <!-- plans -->
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light pt-0" id="plans">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Products Gallery!</h2>
+                    <h3 class="section-subheading text-muted">Choose your fav brand | fill in details | and relax! <br>we are on our way!</h3>
+                </div>
+                <div class="row">
+                    <!-- stayfree -->
+                    <div class="col-lg-3 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item mb-5">
+                                <img class="img-fluid mb-2" src="assets/img/portfolio/1.jpg" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Stayfree Secure (6 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/4.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Stayfree Secure Extra large (20 pads | 40 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/8.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Stayfree Dry Max All Nights XL (2 x 42 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sofy -->
+                    <div class="col-lg-3 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/3.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sofy Antibacterial (7 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/6.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sofy Anti Bnacteria Extra Long (30 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 5</div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/10.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sofy Anti-Bacteria Extra-Long (48 pads) </div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 6</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- whisper -->
+                    <div class="col-lg-3 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/2.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Whisper (6 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 7</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/5.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Whisper ultra soft XL ( 30 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 8</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/7.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Whisper  Bindazzz Nights (20 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 9</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/9.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Whisper Ultra Clean For Women 50pcs & Ultra Nights XXXL Wings 20pcs (Combo)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 10</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/11.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Whisper Ultra Soft Air Fresh Sanitary Pads (15 pads)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 11</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item mb-5">
+                            <img class="img-fluid mb-2" src="assets/img/portfolio/12.webp" alt="..." />
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Whisper Ultra Soft Air Fresh Sanitary Pads (15 pads)  (Buy 2 Get 1 Free)</div>
+                                <div class="portfolio-caption-subheading text-muted">Product No. 12</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="text-center my-5"><a target="_blank" href="https://forms.gle/BxzXytxq95r7NraY9"><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Subscribe Here!</button></a></div>
+            </div>
+        </section>
+
+        <!-- Clients-->
+        <!-- <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         -->
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Connect us for any queries. </h3>
+                </div>
+                
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Error sending message!</div>
+                            Connect us through email.
+                            <br />
+                            <a href="mailto:sumayyanazneen2628@gmail.com">Order@jasmine.care</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center "><button class="btn btn-primary btn-xl text-uppercase " id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-lg-start">Copyright &copy; Jasmine.Care 2023</div>
+                    <!-- <div class="col-lg-3 text-lg-start">Distributed By <a href="https://themewagon.com/">Themewagon</a></div> -->
+                    <div class="col-lg-3 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-3 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
